@@ -103,3 +103,7 @@ if [ -n "$dir" ]; then
         fi
     done
 fi
+
+mkdir -p "/home/$user/upload"
+chmod g+w /home/$user/upload
+usermod -d /home/$user/upload $user
