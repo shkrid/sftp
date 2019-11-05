@@ -104,7 +104,6 @@ if [ -n "$dir" ]; then
     done
 fi
 
-mkdir -p "/home/$user/upload"
-#chown $user "/home/$user/upload"
-#chmod g+w /home/$user/upload
-#usermod -d /home/$user/upload $user
+mkdir -p "/home/$user/sftp"
+chown $user "/home/$user/sftp"
+chmod g+w /home/$user/sftp
