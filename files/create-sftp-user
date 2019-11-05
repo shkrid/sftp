@@ -104,6 +104,7 @@ if [ -n "$dir" ]; then
     done
 fi
 
+# Share sftp dir by common group 
 mkdir -p "/home/$user/sftp"
-chown $user "/home/$user/sftp"
+chgrp $user "/home/$user/sftp"
 chmod g+w /home/$user/sftp
