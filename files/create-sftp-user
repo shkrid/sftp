@@ -105,5 +105,6 @@ if [ -n "$dir" ]; then
 fi
 
 mkdir -p "/home/$user/upload"
-chmod g+w /home/$user/upload
+#chown $user "/home/$user/upload"
+#chmod g+w /home/$user/upload
 #usermod -d /home/$user/upload $user
